@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: sans-serif;
+}
+.box-login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.5);
+	width: 400px;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,.5);
+}
+.box-login h2 {
+	margin: 0 0 35px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.box-login .inputan {
+	position: relative;
+}
+.box-login .inputan input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #111;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #111;
+	outline: none;
+	background: transparent; 
+}
+.box-login .inputan label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #111;
+	pointer-events: none;
+	transition: .5s
+}
+.box-login .inputan input:focus ~ label,.box-login .inputan input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #e91e63;
+}
+.box-login .btnLogin {
+	font-size: 18px;
+	padding: 10px 20px;
+	background: #e91e63;
+	color: #fff;
+	border: none;
+	outline: none;
+}

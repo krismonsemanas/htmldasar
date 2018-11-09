@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive Navbar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="navbar-responsive">
+				<img src="img/fa-bars.png" width="25" id="menu">
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Kontak</a></li>
+				<li><a href="#">Galeri</a></li>
+			</ul>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('#menu').click(function() {
+					$('ul').toggleClass('add')
+				})
+			})
+		</script>
+	</body>
+</html>
